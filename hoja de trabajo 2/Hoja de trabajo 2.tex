@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%paquetes que usa el doc
+
+\title{Hoja de trabajo \# 2}
+\author{Luis Gerardo Morales Salazar \\Carnet: 2018-1364\\ morales181364@unis.edu.gt}
+\date{x de x de 2018}
+
+% datos del encabezado o titulo del doc
+\usepackage{natbib}
+\usepackage{graphicx}
+
+
+\begin{document}
+\maketitle
+% bloque de respuestas del ejercicio 2
+\section{Ejercicio \# 1}
+
+%respuestas del inciso 1
+\begin{enumerate}
+\item Demostrar usando inducci\'on lo siguiente $\\ \forall\ n.\ n^3\geq n^2$
+\\\\Caso base: $n=0 $
+\\\\Hipotesis Inductiva: $ n^3\geq n^2\ $ 
+\\\\Demostraci\'on :
+$\\ n^3\geq n^2\ \\ n*n^2\geq n^2\ \\ (1+n)*(1+n)^2\geq (n+1)^2\ \\ n+1\geq \frac{(n+1)^2}{(n+1)^2}\ \\ n+1\geq 1 \\ n\geq 1-1 \\ n\geq 0 \ $ \end{enumerate}
+
+% bloque de respuestas del inciso 2
+\section{Ejercicio \# 2}
+\begin{enumerate}
+\item Demostrar utilizando inducci\'on la desigualdad de Bernoulli lo siguiente $\\ \forall\ n.\ (1+x)^n\geq nx $
+\\donde $n\in \mathbb{N}$, $x\in \mathbb{Q}$ y $x\geq -1$
+\\\\Caso base: $n=0 $
+\\\\Hipotesis Inductiva: $ (1+x)^n\geq nx $ 
+\\\\Demostraci\'on :
+$\\ (1+x)^{n+1} \geq nx+1\ \\ (1+x)(1+x)^n\geq nx+1\ \\ 1(1+x)+x(1+x)^n\geq nx+1 \\ (1+x)+x(1+x)^n -1\geq nx\ \\ x(1+x)^n -1\geq 0\ \\ x(1-x)^n\geq 1\ \\ (1+x)^n \geq \frac{1}{x} $ 
+% documento creado en sharelatex.com
+\end{enumerate}
+\end{document}
