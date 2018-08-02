@@ -6,7 +6,7 @@
 
 \title{Hoja de trabajo \# 2}
 \author{Luis Gerardo Morales Salazar \\Carnet: 2018-1364\\ morales181364@unis.edu.gt}
-\date{x de x de 2018}
+\date{02 de agosto de 2018}
 
 % datos del encabezado o titulo del doc
 \usepackage{natbib}
@@ -21,20 +21,25 @@
 %respuestas del inciso 1
 \begin{enumerate}
 \item Demostrar usando inducci\'on lo siguiente $\\ \forall\ n.\ n^3\geq n^2$
-\\\\Caso base: $n=0 $
-\\\\Hipotesis Inductiva: $ n^3\geq n^2\ $ 
+\\\\Caso base:\\ $n=0 \\ 0^3\geq 0^2 \\ 0\geq 0$ 
+\\\\Hipotesis Inductiva: \\ $ n^3\geq n^2\ $ 
 \\\\Demostraci\'on :
-$\\ n^3\geq n^2\ \\ n*n^2\geq n^2\ \\ (1+n)*(1+n)^2\geq (n+1)^2\ \\ n+1\geq \frac{(n+1)^2}{(n+1)^2}\ \\ n+1\geq 1 \\ n\geq 1-1 \\ n\geq 0 \ $ \end{enumerate}
+\\$ n^3\geq n^2\ \\ n*n^2\geq n^2\ \\ (1+n)*(1+n)^2\geq (n+1)^2\ \\ n+1\geq \frac{(n+1)^2}{(n+1)^2}\ \\ n+1\geq 1 \\ n\geq 1-1 \\ n\geq 0 \ $ \end{enumerate}
 
 % bloque de respuestas del inciso 2
 \section{Ejercicio \# 2}
 \begin{enumerate}
 \item Demostrar utilizando inducci\'on la desigualdad de Bernoulli lo siguiente $\\ \forall\ n.\ (1+x)^n\geq nx $
 \\donde $n\in \mathbb{N}$, $x\in \mathbb{Q}$ y $x\geq -1$
-\\\\Caso base: $n=0 $
+\\\\Caso base: $ n=0 \\ (1+x)^0\geq (0)x \\ 1\geq 0 $
+    
 \\\\Hipotesis Inductiva: $ (1+x)^n\geq nx $ 
-\\\\Demostraci\'on :
-$\\ (1+x)^{n+1} \geq nx+1\ \\ (1+x)(1+x)^n\geq nx+1\ \\ 1(1+x)+x(1+x)^n\geq nx+1 \\ (1+x)+x(1+x)^n -1\geq nx\ \\ x(1+x)^n -1\geq 0\ \\ x(1-x)^n\geq 1\ \\ (1+x)^n \geq \frac{1}{x} $ 
+\\\\Demostraci\'on cuando x es positiva :
+\\ $(1+x)^{(n+1)} \geq x(n+1) \\ (1+x)(1+x)^n\geq x(n+1) \\ (1+x)^n+x(1+x)^n\geq (nx+x) \\  x(n+1)^n\geq x \\ (n+1)^n \geq 1 \\ nx \geq 1$
+
+\\\\ Demostración cuando x es negativo:
+\\ $(1+x)(1+x)^{(n+1)}\leq x(n+1) \\ (1+x)nx\leq x(n+1) \\ (1+x)n\leq n+1 \\n+nx\leq n+1 \\ nx\leq 1 \\ Si -1 \leq x\leq 0 \\ entonces: nx\leq 1 $ 
+    
 % documento creado en sharelatex.com
 \end{enumerate}
 \end{document}
