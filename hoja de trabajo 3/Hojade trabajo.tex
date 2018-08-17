@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%paquetes que usa el doc
+
+\title{Hoja de trabajo \# 3}
+\author{Luis Gerardo Morales Salazar \\Carnet: 2018-1364\\ morales181364@unis.edu.gt}
+\date{18 de agosto de 2018}
+
+% datos del encabezado o titulo del doc
+\usepackage{natbib}
+\usepackage{graphicx}
+
+
+\begin{document}
+\maketitle
+% respuestas ejercicio 1
+\section{Ejercicio \# 1}
+
+\begin{enumerate}
+$Sumar:  s(s(s(0))) \oplus s(s(s(s(0))))
+\\\\s(s(s(0))) \oplus  s(s(s(s(0))))
+\\s(s(s(s(0))) \oplus  s(s(s(0))))
+\\s(s(s(s(s(0))) \oplus  s(s(0))))
+\\s(s(s(s(s(s(0))) \oplus  (s(0))))
+\\s(s(s(s(s(s(s(0\oplus0))))
+\\s(s(s(s(s(s(s(0)))))))$
+
+%respuestas ejercicio 2
+\\\\ \section{Ejercicio \#2}
+Definir la multiplicación para numeros naturales unarios:
+
+\[n\otimes m := \left\{
+\begin{array}{l l}
+\\0 & \mbox{si } n=0 \\
+\\0 & \mbox{si } m=0 \\
+\\0 & \mbox{si } m=0,n=0 \\
+\\m & \mbox{si } n=1 \\
+\\n & \mbox{si } m=1 \\
+\\s(i)\oplus(s(i)\otimes j) & \mbox{si } n=s(i)
+\\ \end{array}
+\right.\]
+
+%Respuestas ejercicio 3
+\section{Ejercicio \#3}
+
+%Respuesta 3.1
+\item {$s(s(s(0)))\otimes 0$
+\\$s(s(s(0))) \otimes 0 = 0$}
+
+%Respuesta 3.2
+\item {$s(s(s(0)))\otimes s(0)$}
+\\$s(s(s(0))) \otimes s(0) = s(s(s(0))) \oplus (s(s(s(0)))\otimes 0) = s(s(s(0)))$
+
+%Respuesta 3.3
+\item {$s(s(s(0)))\otimes s(s(0))$}
+\\$s(s(s(0))) \oplus (s(s(s(0))) \otimes s(0))$
+\\$s(s(s(0))) \oplus s(s(s(0)))$
+\\$s(s(s(s(0))) \oplus s(s(0)))$
+\\$s(s(s(s(s(0))) \oplus s(0)))$
+\\ $s(s(s(s(s(s(0))) \oplus 0)))$
+\\$s(s(s(s(s(s(0 \oplus 0))))))$
+\\$s(s(s(s(s(s(0))))))$
+\end{enumerate}
+
+%Respuestas ejercicio 4
+\section{Ejercicio \#4}
+\begin{enumerate}
+
+%Respuesta 4.1
+\item{$a\oplus s(s(0))=s(s(a))$} 
+\\\\Caso base a=0 
+\\$0 \oplus s(s(0)) = s(s(0))$ 
+\\$(s(0 \oplus 0)) =s(s(0))$
+\\$s(s(0)) = s(s(0))$ 
+\\\\Caso inductivo a= s(i) 
+\\$s(i) \oplus s(s(0)) = s(s(s(i))) $ 
+\\$s(s(i)) \oplus s(0) = s(s(s(i)))$ 
+\\$s(s(s(i\oplus 0))) = s(s(s(i)))$ 
+\\$s(s(s(i))) = s(s(s(i)))$
+
+%Respuesta 4.2
+\item{$a \otimes b = b \otimes a$}
+\\\\Caso base a = 0 
+\\$0 \otimes b = b \otimes 0$ 
+\\$0 = 0$ 
+\\\\Caso Inductivo a = s(i)
+\\$s(i) \otimes b = b \otimes s(i)$ 
+\\$s(i) \oplus (s(i)\otimes b) = (b \otimes s(i)) \oplus s(i)$
+\\$s(i) \oplus (s(i)\otimes b) = s(i) \oplus (s(i) \otimes b)$
+
+%Respuesta 4.3
+\item{$a \otimes (b \otimes c)=(a\otimes b)\otimes c$}
+\\\\Caso Base c= 0
+\\$a \otimes (b\otimes 0) = (a \otimes b) \otimes 0$
+\\$a \otimes 0  = (ab) \otimes 0$
+\\$0=0$
+\\\\Caso Inductivo a= s(i)
+\\$s(i) \otimes (b \otimes c)=(s(i)\otimes b)\otimes c$
+\\$s(i) \oplus (s(i) \otimes (b\otimes c)) = (s(i) \oplus (s(i) \otimes b)) \otimes c$
+\\ $s(i) \oplus (s(i) \otimes (b\otimes c)) = s(i) \oplus (s(i) \otimes (b\otimes c))$ 
+
+%Respuesta 4.4
+\item $(a \otimes b) \otimes c = (a \otimes c) \oplus (b \otimes c)$
+\\\\Caso base: $c = 0$
+\\$(a \otimes b) \otimes 0 = (a \otimes 0) \oplus (b \otimes 0)$
+\\$(ab) \otimes 0 = (0) \oplus (0)$
+\\$0 = 0$
+\\\\Método inductivo: $c = n \oplus 1$
+\\$(a \otimes b) \otimes (n \oplus 1) = (a \otimes (n + 1)) \oplus (b \otimes (n \oplus 1))$
+\\$(a \otimes (n \oplus 1) \oplus (b \otimes (n \oplus 1)) = (an \oplus a) \oplus (bn \oplus b)$
+\\$(an \oplus a) \oplus (bn \oplus b) = (an \oplus a) \oplus (bn \oplus b)$
+\\$an \ominus an \oplus bn \ominus bn \oplus a \ominus a \oplus b \ominus b = 0$
+\\$0 = 0$
+
+% documento creado en sharelatex.com
+\end{enumerate}
+\end{document}
