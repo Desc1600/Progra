@@ -8,7 +8,7 @@ zipWith ss xs ys  = case (xs, ys) of
 
 --Serie 2
 groupBy : (x -> Bool) -> List x -> (List x, List x) 
-groupBy num lista = (simon num lista, nelSimon num lista)
+groupBy num lista = (simon num lista, nel num lista)
 
 simon x lista = case lista of 
     [] -> []
@@ -16,9 +16,9 @@ simon x lista = case lista of
                 then simon x yss 
                 else y:: simon x yss
 
-nelSimon x lista = case lista of 
+nel x lista = case lista of 
     [] -> []
-    (z::zss) -> if x z then z:: nelSimon x zss else nelSimon x zss
+    (z::zss) -> if x z then z:: nel x zss else nel x zss
 
 --Serie
 bind : Maybe x -> (x -> Maybe x) -> Maybe x
