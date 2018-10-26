@@ -1,13 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Main</title>
-</head>
-
-<body>
-<div id="elm-f0111bc4e658d0f98db96260c16f7e49"></div>
-<script>
 (function(scope){
 'use strict';
 
@@ -4299,6 +4289,7 @@ function _Browser_load(url)
 		}
 	}));
 }
+var author$project$Main$modeloInicial = '';
 var elm$core$Elm$JsArray$foldr = _JsArray_foldr;
 var elm$core$Array$foldr = F3(
 	function (func, baseCase, _n0) {
@@ -4380,11 +4371,11 @@ var elm$core$Set$toList = function (_n0) {
 	return elm$core$Dict$keys(dict);
 };
 var elm$core$Basics$append = _Utils_append;
+var elm$core$Basics$eq = _Utils_equal;
 var author$project$Main$actualizador = F2(
 	function (mensaje, modelo) {
-		return _Utils_ap(modelo, mensaje);
+		return (mensaje === 'C') ? author$project$Main$modeloInicial : _Utils_ap(modelo, mensaje);
 	});
-var author$project$Main$modeloInicial = '0';
 var elm$core$Basics$identity = function (x) {
 	return x;
 };
@@ -4468,7 +4459,6 @@ var elm$core$Basics$apR = F2(
 	function (x, f) {
 		return f(x);
 	});
-var elm$core$Basics$eq = _Utils_equal;
 var elm$core$Tuple$first = function (_n0) {
 	var x = _n0.a;
 	return x;
@@ -4797,10 +4787,136 @@ var elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 			return 3;
 	}
 };
-var elm$html$Html$button = _VirtualDom_node('button');
 var elm$html$Html$div = _VirtualDom_node('div');
 var elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var elm$html$Html$text = elm$virtual_dom$VirtualDom$text;
+var author$project$Main$pre = function (mode) {
+	return A2(
+		elm$html$Html$div,
+		_List_Nil,
+		_List_fromArray(
+			[
+				elm$html$Html$text(mode)
+			]));
+};
+var author$project$Main$otro = function (n) {
+	if (n.$ === 'Just') {
+		var a = n.a;
+		return a;
+	} else {
+		return 0;
+	}
+};
+var elm$core$String$cons = _String_cons;
+var elm$core$String$fromChar = function (_char) {
+	return A2(elm$core$String$cons, _char, '');
+};
+var elm$core$String$fromList = _String_fromList;
+var elm$core$String$reverse = _String_reverse;
+var elm$core$String$toInt = _String_toInt;
+var author$project$Main$multiplicacion = F3(
+	function (x, xs, ys) {
+		return author$project$Main$otro(
+			elm$core$String$toInt(
+				_Utils_ap(
+					elm$core$String$fromChar(x),
+					elm$core$String$reverse(
+						elm$core$String$fromList(xs))))) * author$project$Main$otro(
+			elm$core$String$toInt(
+				elm$core$String$fromList(ys)));
+	});
+var author$project$Main$sumar = F3(
+	function (x, xs, ys) {
+		return author$project$Main$otro(
+			elm$core$String$toInt(
+				_Utils_ap(
+					elm$core$String$fromChar(x),
+					elm$core$String$reverse(
+						elm$core$String$fromList(xs))))) + author$project$Main$otro(
+			elm$core$String$toInt(
+				elm$core$String$fromList(ys)));
+	});
+var author$project$Main$respuestaAux = F2(
+	function (vlist, lista) {
+		respuestaAux:
+		while (true) {
+			var _n0 = _Utils_Tuple2(vlist, lista);
+			if (!_n0.b.b) {
+				return 0;
+			} else {
+				if (!_n0.a.b) {
+					var _n1 = _n0.b;
+					var x = _n1.a;
+					var xs = _n1.b;
+					if (_Utils_eq(
+						x,
+						_Utils_chr('+'))) {
+						return A3(
+							author$project$Main$sumar,
+							_Utils_chr('0'),
+							_List_Nil,
+							xs);
+					} else {
+						if (_Utils_eq(
+							x,
+							_Utils_chr('*'))) {
+							return A3(
+								author$project$Main$multiplicacion,
+								_Utils_chr('0'),
+								_List_Nil,
+								xs);
+						} else {
+							var $temp$vlist = A2(elm$core$List$cons, x, _List_Nil),
+								$temp$lista = xs;
+							vlist = $temp$vlist;
+							lista = $temp$lista;
+							continue respuestaAux;
+						}
+					}
+				} else {
+					var _n2 = _n0.a;
+					var x = _n2.a;
+					var xs = _n2.b;
+					var _n3 = _n0.b;
+					var y = _n3.a;
+					var ys = _n3.b;
+					if (_Utils_eq(
+						y,
+						_Utils_chr('+'))) {
+						return A3(author$project$Main$sumar, x, xs, ys);
+					} else {
+						if (_Utils_eq(
+							y,
+							_Utils_chr('*'))) {
+							return A3(author$project$Main$multiplicacion, x, xs, ys);
+						} else {
+							var $temp$vlist = A2(
+								elm$core$List$cons,
+								x,
+								A2(elm$core$List$cons, y, xs)),
+								$temp$lista = ys;
+							vlist = $temp$vlist;
+							lista = $temp$lista;
+							continue respuestaAux;
+						}
+					}
+				}
+			}
+		}
+	});
+var elm$core$String$foldr = _String_foldr;
+var elm$core$String$toList = function (string) {
+	return A3(elm$core$String$foldr, elm$core$List$cons, _List_Nil, string);
+};
+var author$project$Main$respuesta = function (modelo) {
+	return A2(
+		author$project$Main$respuestaAux,
+		_List_Nil,
+		elm$core$String$toList(modelo));
+};
+var elm$html$Html$button = _VirtualDom_node('button');
+var elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
+var elm$html$Html$Attributes$style = elm$virtual_dom$VirtualDom$style;
 var elm$virtual_dom$VirtualDom$Normal = function (a) {
 	return {$: 'Normal', a: a};
 };
@@ -4821,109 +4937,182 @@ var elm$html$Html$Events$onClick = function (msg) {
 var author$project$Main$vista = function (modelo) {
 	return A2(
 		elm$html$Html$div,
-		_List_Nil,
 		_List_fromArray(
 			[
-				elm$html$Html$text(modelo),
+				A2(elm$html$Html$Attributes$style, 'font-family', 'Helvetica, Arial, sans-serif'),
+				A2(elm$html$Html$Attributes$style, 'position', 'absolute'),
+				A2(elm$html$Html$Attributes$style, 'right', '700px')
+			]),
+		_List_fromArray(
+			[
+				author$project$Main$pre(modelo),
 				A2(
-				elm$html$Html$button,
+				elm$html$Html$div,
+				_List_Nil,
 				_List_fromArray(
 					[
-						elm$html$Html$Events$onClick('0')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('0')
+						elm$html$Html$text(
+						elm$core$String$fromInt(
+							author$project$Main$respuesta(modelo)))
 					])),
 				A2(
-				elm$html$Html$button,
+				elm$html$Html$div,
+				_List_Nil,
 				_List_fromArray(
 					[
-						elm$html$Html$Events$onClick('1')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('1')
-					])),
-				A2(
-				elm$html$Html$button,
-				_List_fromArray(
-					[
-						elm$html$Html$Events$onClick('2')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('2')
-					])),
-				A2(
-				elm$html$Html$button,
-				_List_fromArray(
-					[
-						elm$html$Html$Events$onClick('3')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('3')
-					])),
-				A2(
-				elm$html$Html$button,
-				_List_fromArray(
-					[
-						elm$html$Html$Events$onClick('4')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('4')
-					])),
-				A2(
-				elm$html$Html$button,
-				_List_fromArray(
-					[
-						elm$html$Html$Events$onClick('5')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('5')
-					])),
-				A2(
-				elm$html$Html$button,
-				_List_fromArray(
-					[
-						elm$html$Html$Events$onClick('6')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('6')
-					])),
-				A2(
-				elm$html$Html$button,
-				_List_fromArray(
-					[
-						elm$html$Html$Events$onClick('7')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('7')
-					])),
-				A2(
-				elm$html$Html$button,
-				_List_fromArray(
-					[
-						elm$html$Html$Events$onClick('8')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('8')
-					])),
-				A2(
-				elm$html$Html$button,
-				_List_fromArray(
-					[
-						elm$html$Html$Events$onClick('9')
-					]),
-				_List_fromArray(
-					[
-						elm$html$Html$text('9')
+						A2(
+						elm$html$Html$button,
+						_List_fromArray(
+							[
+								elm$html$Html$Events$onClick('1')
+							]),
+						_List_fromArray(
+							[
+								elm$html$Html$text('1')
+							])),
+						A2(
+						elm$html$Html$button,
+						_List_fromArray(
+							[
+								elm$html$Html$Events$onClick('2')
+							]),
+						_List_fromArray(
+							[
+								elm$html$Html$text('2')
+							])),
+						A2(
+						elm$html$Html$button,
+						_List_fromArray(
+							[
+								elm$html$Html$Events$onClick('3')
+							]),
+						_List_fromArray(
+							[
+								elm$html$Html$text('3')
+							])),
+						A2(
+						elm$html$Html$button,
+						_List_fromArray(
+							[
+								elm$html$Html$Events$onClick('+')
+							]),
+						_List_fromArray(
+							[
+								elm$html$Html$text('+')
+							])),
+						A2(
+						elm$html$Html$div,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								elm$html$Html$button,
+								_List_fromArray(
+									[
+										elm$html$Html$Events$onClick('4')
+									]),
+								_List_fromArray(
+									[
+										elm$html$Html$text('4')
+									])),
+								A2(
+								elm$html$Html$button,
+								_List_fromArray(
+									[
+										elm$html$Html$Events$onClick('5')
+									]),
+								_List_fromArray(
+									[
+										elm$html$Html$text('5')
+									])),
+								A2(
+								elm$html$Html$button,
+								_List_fromArray(
+									[
+										elm$html$Html$Events$onClick('6')
+									]),
+								_List_fromArray(
+									[
+										elm$html$Html$text('6')
+									])),
+								A2(
+								elm$html$Html$div,
+								_List_Nil,
+								_List_fromArray(
+									[
+										A2(
+										elm$html$Html$button,
+										_List_fromArray(
+											[
+												elm$html$Html$Events$onClick('7')
+											]),
+										_List_fromArray(
+											[
+												elm$html$Html$text('7')
+											])),
+										A2(
+										elm$html$Html$button,
+										_List_fromArray(
+											[
+												elm$html$Html$Events$onClick('8')
+											]),
+										_List_fromArray(
+											[
+												elm$html$Html$text('8')
+											])),
+										A2(
+										elm$html$Html$button,
+										_List_fromArray(
+											[
+												elm$html$Html$Events$onClick('9')
+											]),
+										_List_fromArray(
+											[
+												elm$html$Html$text('9')
+											])),
+										A2(
+										elm$html$Html$button,
+										_List_fromArray(
+											[
+												elm$html$Html$Events$onClick('*')
+											]),
+										_List_fromArray(
+											[
+												elm$html$Html$text('*')
+											])),
+										A2(
+										elm$html$Html$div,
+										_List_Nil,
+										_List_fromArray(
+											[
+												A2(
+												elm$html$Html$button,
+												_List_fromArray(
+													[
+														A2(elm$html$Html$Attributes$style, 'height', '50px'),
+														A2(elm$html$Html$Attributes$style, 'width', '50px'),
+														elm$html$Html$Events$onClick('0')
+													]),
+												_List_fromArray(
+													[
+														elm$html$Html$text('0')
+													])),
+												A2(
+												elm$html$Html$button,
+												_List_fromArray(
+													[
+														A2(elm$html$Html$Attributes$style, 'background', '#FF0000'),
+														A2(elm$html$Html$Attributes$style, 'color', '#FFFFFF'),
+														A2(elm$html$Html$Attributes$style, 'font-family', 'Helvetica, Arial, sans-serif'),
+														elm$html$Html$Events$onClick('C')
+													]),
+												_List_fromArray(
+													[
+														elm$html$Html$text('C')
+													]))
+											]))
+									]))
+							]))
 					]))
 			]));
 };
@@ -5119,7 +5308,6 @@ var elm$core$String$left = F2(
 		return (n < 1) ? '' : A3(elm$core$String$slice, 0, n, string);
 	});
 var elm$core$String$contains = _String_contains;
-var elm$core$String$toInt = _String_toInt;
 var elm$url$Url$Url = F6(
 	function (protocol, host, port_, path, query, fragment) {
 		return {fragment: fragment, host: host, path: path, port_: port_, protocol: protocol, query: query};
@@ -5248,12 +5436,3 @@ var author$project$Main$main = elm$browser$Browser$sandbox(
 	{init: author$project$Main$modeloInicial, update: author$project$Main$actualizador, view: author$project$Main$vista});
 _Platform_export({'Main':{'init':author$project$Main$main(
 	elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
-
-var app = Elm.Main.init({ node: document.getElementById("elm-f0111bc4e658d0f98db96260c16f7e49") });
-if (document.getElementById("elm-f0111bc4e658d0f98db96260c16f7e49"))
-{
-  document.getElementById("elm-f0111bc4e658d0f98db96260c16f7e49").innerText = 'This is a headless program, meaning there is nothing to show here.\n\nI started the program anyway though, and you can access it as `app` in the developer console.';
-}
-</script>
-</body>
-</html>
