@@ -21,7 +21,7 @@ switch(p){
     case 't':
     g = 9.8;
     k = 0.0023;
-    printf("La gravedad es: %.2f, la resistencia del viento es: %.4f\n", g ,k);
+    printf("Usted ha selccionado la Tierra\nLa gravedad es: %.2f, la resistencia del viento es: %.4f\n", g ,k);
     printf("Ingrese el tiempo de caida libre:\n");
     cin >> t2;//solicitud del tiempo
     while(t2 >= t ){
@@ -41,7 +41,7 @@ switch(p){
     case 'v':
     g = 8.87;
     k = 0.0023;
-    printf("La gravedad es: %.2f, la resistencia del viento es: %.4f\n", g ,k);
+    printf("Usted ha selccionado Venus\nLa gravedad es: %.2f, la resistencia del viento es: %.4f\n", g ,k);
     printf("Ingrese el tiempo de caida libre:\n");
     cin >> t2;
     while(t2 >= t ){
@@ -61,7 +61,7 @@ switch(p){
     case 'l':
     g = 1.62;
     k = 0.0;
-    printf("La gravedad es: %.2f , la resistencia del viento es: %.4f\n", g ,k);
+    printf("Usted ha selccionado la Luna\nLa gravedad es: %.2f , la resistencia del viento es: %.4f\n", g ,k);
     printf("Ingrese el tiempo de caida libre:\n");
     cin >> t2;
     while(t2 >= t ){
@@ -81,7 +81,7 @@ switch(p){
     case 'c':
     g = 1.23;
     k = 0.0;
-    printf("La gravedad es: %.2f, la resistencia del viento es: %.4f\n", g ,k);
+    printf("Usted ha selccionado Callisto\nLa gravedad es: %.2f, la resistencia del viento es: %.4f\n", g ,k);
     printf("Ingrese el tiempo de caida libre:\n");
     cin >> t2;
     while(t2 >= t ){
