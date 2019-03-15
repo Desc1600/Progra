@@ -7,7 +7,7 @@ class Vector2d{
         Vector2d operator+(const Vector2d& otro) const;
         float getX() const;
         float getY() const;
-        std::string to_string();
+        const std::string to_string() const;
          
         
 
