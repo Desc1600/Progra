@@ -1,0 +1,104 @@
+﻿  pch.cpp
+  Proyecto.cpp
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(22): error C2871: 'System': no existe ningún espacio de nombres con este nombre
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(33): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(33): error C3861: 'SetCursorPosition': no se encontró el identificador
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(64): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(64): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(64): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(64): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(81): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(81): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(81): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(81): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(92): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(92): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(92): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(92): error C2065: 'Yellow': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(104): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(104): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(104): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(104): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(121): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(121): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(121): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(121): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(132): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(132): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(132): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(132): error C2065: 'Yellow': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(144): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(144): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(144): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(144): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(161): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(161): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(161): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(161): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(172): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(172): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(172): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(172): error C2065: 'Yellow': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(184): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(184): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(184): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(184): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(201): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(201): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(201): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(201): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(212): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(212): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(212): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(212): error C2065: 'Yellow': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(440): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(440): error C3861: 'SetCursorPosition': no se encontró el identificador
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(443): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(443): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(443): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(443): error C2065: 'Gray': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(447): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(447): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(447): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(447): error C2065: 'DarkCyan': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(451): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(451): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(451): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(451): error C2065: 'DarkBlue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(455): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(455): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(455): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(455): error C2065: 'DarkYellow': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(463): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(463): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(463): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(463): error C2065: 'DarkGreen': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(465): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(465): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(465): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(465): error C2065: 'White': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(469): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(469): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(469): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(469): error C2065: 'Red': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(473): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(473): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(473): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(473): error C2065: 'Blue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(477): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(477): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(477): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(477): error C2065: 'Red': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(481): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(481): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(481): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(481): error C2065: 'DarkBlue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(485): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(485): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(485): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(485): error C2065: 'DarkBlue': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(492): error C2653: 'Console': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(492): error C2065: 'ForegroundColor': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(492): error C2653: 'ConsoleColor': no es un nombre de clase o espacio de nombres
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(492): error C2065: 'DarkYellow': identificador no declarado
+c:\users\artorias\desktop\superneto\proyecto\proyecto.cpp(492): fatal error C1003: el recuento de errores supera 100; se detiene la compilación

@@ -1,0 +1,5 @@
+﻿  Proyecto.cpp
+c1xx : warning C4199: no se admite la búsqueda de nombres en dos fases para OpenMP, C++/CLI o C++/CX. Use /Zc:twoPhase-
+  pch.obj : /DEBUG:FASTLINK no se admite cuando hay presente código administrado; reiniciando vínculo con /DEBUG:FULL
+  pch.obj : se encontr¾ un m¾dulo MSIL; vinculaci¾n incremental deshabilitada para MSIL; ejecutando vÝnculo completo
+  Proyecto.vcxproj -> C:\Users\Artorias\Desktop\SuperNeto\Debug\Proyecto.exe
