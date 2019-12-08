@@ -1,1 +1,0 @@
-#define Mensaje1 " Mensaje Laboratorio 1"

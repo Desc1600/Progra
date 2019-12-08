@@ -1,1 +1,0 @@
-#define Valor1 25
